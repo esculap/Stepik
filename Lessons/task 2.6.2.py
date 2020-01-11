@@ -21,3 +21,13 @@ cropped_list = list_of_nums[0:input_number]
 result = ' '.join(cropped_list)
 
 print(result)
+
+
+# the most elegant:
+n = int(input())
+a = []
+i = 0
+while len(a) < n:
+    a += [i] * i
+    i += 1
+print(*a[:n])
